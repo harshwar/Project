@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A monorepo for the NFT Viewer and Hardhat projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --workspace=nft-viewer",
+    "build": "npm run build --workspace=nft-viewer",
+    "test": "npm run test --workspace=my-hardhat-project",
+    "lint": "npm run lint --workspace=nft-viewer",
+    "deploy": "hardhat run scripts/deploy-nft.js --workspace=my-hardhat-project"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshwar/Project.git"
+  },
+  "keywords": [],
+  "author": "Harsh",
+  "license": "ISC",
+  "workspaces": [
+    "Frontend/nft-viewer",
+    "my-hardhat-project"],
+  "bugs": {
+    "url": "https://github.com/harshwar/Project/issues"
+  },
+  "homepage": "https://github.com/harshwar/Project#readme"
+}
