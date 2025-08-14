@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router' // Import the router you created
 import './assets/main.css'
+import './assets/tailwind.css'
 
 // Create the main Vue application instance
 const app = createApp(App)
